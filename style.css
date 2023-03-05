@@ -1,2 +1,65 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px */
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  -off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-blue: sl(236, 13%, 42%);
+  --very-dark: hsl(240, 100%, 5%);
+
+  --font: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--font);
+  
+  padding: 100px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: var(--very-dark);
+}
+.navbar li:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.right img {
+  width: 90%;
+}
