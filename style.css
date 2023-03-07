@@ -12,9 +12,9 @@
 :root {
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
-  -off-white: hsl(36, 100%, 99%);
+  --off-white: hsl(36, 100%, 99%);
   --grayish-blue: hsl(233, 8%, 79%);
-  --dark-blue: sl(236, 13%, 42%);
+  --dark-blue: hsl(236, 13%, 42%);
   --very-dark: hsl(240, 100%, 5%);
 
   --font: "Inter", sans-serif;
@@ -27,9 +27,9 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 15px;
   font-family: var(--font);
-  
+
   padding: 100px;
 }
 
@@ -62,4 +62,65 @@ header .navbar {
 
 .right img {
   width: 90%;
+}
+.texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.texts h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--font);
+  color: var(--very-dark);
+}
+
+.texts p {
+  line-height: 1.4;
+}
+
+.texts button {
+  display: block;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  letter-spacing: 3px;
+}
+
+.left {
+  background-color: var(--very-dark);
+  padding: 1.2rem;
+  display: grid;
+  align-items: center;  
+}
+.part h1 {
+  color: var(--soft-orange);
+  padding-bottom: 1.6rem;
+ 
+}
+.part .header {
+  color: var(--off-white);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-bottom: .5rem;
+}
+
+.part .bodyText {
+  color: var(--grayish-blue);
+  font-family: var(--font);
+  font-size: 0.9rem;
+  line-height: 1.9;
+  
+}
+
+.left .line{
+  width: 95%;
+  padding: .2px 0;
+  background: white;
+
 }
